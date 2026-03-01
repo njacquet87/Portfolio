@@ -32,6 +32,10 @@ body {
   line-height: 1.6;
 }
 
+p {
+  text-align: justify;
+}
+
 header {
   background-color: var(--color-header-bg);
   border-bottom: 1px solid var(--color-border);
@@ -117,6 +121,7 @@ section hr {
     text-align: center;
     font-size: 150%;
     box-shadow: 0px 0px 0px 0px;
+    margin-bottom: 2%;
 }
 
 #sub_title {
@@ -131,4 +136,84 @@ section hr {
     width: 38%;
     justify-self: center;
     margin: 0 auto;
+}
+
+.competence {
+    margin-top: 2%;
+}
+
+.project {
+  padding-left: 1%;
+  padding-bottom: 1%;
+}
+
+.project h4 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.project p {
+  padding-left: 1%;
+}
+
+.project img {
+  margin-top: 1%;
+  border-radius: var(--radius);
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-header-bg);
+    font-weight: 500;
+}
+/* Accordéon styles */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.accordion-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-header-bg);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accordion-btn[aria-expanded="true"] {
+  background-color: var(--color-header-bg);
+  color: white;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  transition: transform 0.5s ease;
+}
+
+.accordion-btn[aria-expanded="true"] .accordion-icon {
+  transform: rotate(90deg);
+}
+
+.accordion-panel {
+  background-color: var(--color-bg-secondary);
+  padding: 1%;
+  border-top: 1px solid var(--color-border);
+  animation: slideDown 0.5s ease;
 }
