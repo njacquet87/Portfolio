@@ -1,6 +1,6 @@
 :root {
-  --color-bg: #f9fafb;
-  --color-header-bg: #302f3e;
+  --color-bg: #ededed;
+  --color-header-bg: #559627;
   --color-bg-secondary: #ffffff;
 
   --color-text: #111827;
@@ -158,6 +158,9 @@ section hr {
 
 .project img {
   margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   border-radius: var(--radius);
   max-width: 100%;
   height: auto;
