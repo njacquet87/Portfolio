@@ -167,8 +167,11 @@ section hr {
     text-decoration: none;
     color: var(--color-header-bg);
     font-weight: 500;
+    font-style: italic;
 }
+
 /* Accordéon styles */
+
 .accordion {
   display: flex;
   flex-direction: column;
@@ -204,7 +207,7 @@ section hr {
 
 .accordion-icon {
   font-size: 1.5rem;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
 .accordion-btn[aria-expanded="true"] .accordion-icon {
