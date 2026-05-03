@@ -1,16 +1,17 @@
 :root {
-  --color-bg: #ededed;
-  --color-header-bg: #150f64;
+  --color-bg: #FCFDFA;
+  --color-header-bg: #B0E64C;
   --color-bg-secondary: #ffffff;
 
-  --color-text: #111827;
+  --color-text: #37401C;
   --color-text-muted: #6b7280;
-  --color-text-header: #ffffff;
 
-  --color-border: #e5e7eb;
+  --color-border: #ABC978;
 
   --radius: 12px;
   --max-width: 1100px;
+
+  --color-accordion: #D3E7A6;
 }
 
 html {
@@ -39,7 +40,7 @@ p {
 header {
   background-color: var(--color-header-bg);
   border-bottom: 1px solid var(--color-border);
-  color: var(--color-text-header);    
+  color: var(--color-text);    
   padding: 1.5rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -60,7 +61,7 @@ header h1 {
 
 #horizontal_nav_bar a {
   text-decoration: none;
-  color: var(--color-text-header);
+  color: var(--color-text);
   font-weight: 500;
   padding: 0.25rem 0;
   position: relative;
@@ -73,7 +74,7 @@ header h1 {
   bottom: -4px;
   width: 0;
   height: 2px;
-  background-color: var(--color-text-header);
+  background-color: var(--color-text);
   transition: width 0.2s ease;
 }
 
@@ -91,8 +92,8 @@ section {
   background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  padding: 2rem;
-  margin-bottom: 2.5rem;
+  padding: 2%;
+  margin-bottom: 3%;
   transition: box-shadow 0.3s ease;
 }
 
@@ -121,7 +122,21 @@ section hr {
     text-align: center;
     font-size: 150%;
     box-shadow: 0px 0px 0px 0px;
-    margin-bottom: 2%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    animation: fadeUp 0.5s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #sub_title {
@@ -191,7 +206,7 @@ section hr {
 .accordion-btn {
   width: 100%;
   padding: 1rem;
-  background-color: var(--color-header-bg);
+  background-color: var(--color-accordion);
   border: none;
   cursor: pointer;
   display: flex;
@@ -199,13 +214,8 @@ section hr {
   align-items: center;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: var(--color-text);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.accordion-btn[aria-expanded="true"] {
-  background-color: var(--color-header-bg);
-  color: white;
 }
 
 .accordion-icon {
@@ -218,8 +228,18 @@ section hr {
 }
 
 .accordion-panel {
-  background-color: var(--color-bg-secondary);
-  padding: 1%;
-  border-top: 1px solid var(--color-border);
-  animation: slideDown 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
