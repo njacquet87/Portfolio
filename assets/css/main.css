@@ -1,17 +1,17 @@
 :root {
-  --color-bg: #FCFDFA;
-  --color-header-bg: #B0E64C;
+  --color-bg: #F5FBF5;
+  --color-header-bg: #65BA74;
   --color-bg-secondary: #ffffff;
 
-  --color-text: #37401C;
+  --color-text: #203C25;
   --color-text-muted: #6b7280;
 
-  --color-border: #ABC978;
+  --color-border: #B2DDB5;
 
   --radius: 12px;
   --max-width: 1100px;
 
-  --color-accordion: #D3E7A6;
+  --color-accordion: #C9E8CA;
 }
 
 html {
@@ -159,6 +159,7 @@ section hr {
 
 .project {
   padding-left: 1%;
+  padding-right: 1%;
   padding-bottom: 1%;
 }
 
