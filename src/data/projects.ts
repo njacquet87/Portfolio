@@ -1,7 +1,7 @@
-import dashboardImage from '../../images/dashboard.webp'
-import mcdImage from '../../images/mcd.webp'
-import todoImage from '../../images/maquette_todo.webp'
-import demoVideo from '../../images/Video_demo.mp4'
+import dashboardImage from '../../public/images/dashboard.webp'
+import mcdImage from '../../public/images/mcd.webp'
+import todoImage from '../../public/images/maquette_todo.webp'
+import demoVideo from '../../public/images/Video_demo.mp4'
 
 export interface Project {
   slug: string
