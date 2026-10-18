@@ -6,11 +6,11 @@
             <p>Étudiant BUT info</p>
 
             <a href="https://github.com/njacquet87">
-                <img src="../../images/github_logo.webp" alt="github_icon" width="40" height="40">
+                <img src="../../public/images/github_logo.webp" alt="github_icon" width="40" height="40">
             </a>
 
             <a href="https://www.linkedin.com/in/noé-jacquet/">
-                <img src="../../images/linkedin_logo.webp" alt="linkedin_icon" width="40" height="40">
+                <img src="../../public/images/linkedin_logo.webp" alt="linkedin_icon" width="40" height="40">
             </a>
         </div>
     </div>
